@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo SCROLL</title>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.scrollorama.js"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <section class="wrapper">
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Menus</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <div class="contenido">
+      <div class="container">
+
+        <div class="scrollblock item">
+          <div id="animacion1">
+            <h1>Esta es</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion2">
+            <h1>la demostracion</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion3">
+            <h1>Del pluggin</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion4">
+            <h1>Scrollorama</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion5">
+            <h1>de Jquery</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion6">
+            <h1>muchas gracias</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion7">
+            <h1>creado por</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion8">
+            <h1>Cristian Clavijo</h1>
+          </div>
+        </div>
+
+        <div class="scrollblock item">
+          <div id="animacion9">
+            <h1>:=3)</h1>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        var scrollorama = $.scrollorama({blocks: '.scrollblock'});
+            scrollorama.animate('#animacion1',{duration:500,property:'right', start: 400,pin:true});
+            scrollorama.animate('#animacion2',{delay:400,duration:300,property:'opacity', start:0});
+            scrollorama.animate('#animacion3',{delay:400,duration:300,property:'left', start:-1000,end: 0});
+
+            scrollorama.animate('#animacion4',{duration:800,property:'rotate', start:720});
+            scrollorama.animate('#animacion5',{delay:200,duration:600,property:'zoom', start:8});
+            scrollorama.animate('#animacion6',{delay:700,duration:200,property:'opacity', start:0});
+            scrollorama.animate('#animacion7',{delay:800,duration:200,property:'letter-spacing', start:18});
+            scrollorama.animate('#animacion8',{delay:700,duration:200,property:'opacity', start:0});
+            scrollorama.animate('#animacion9',{duration:900,property:'right', start:400, pin:true});
+      })
+    </script>
+  </body>
+</html>

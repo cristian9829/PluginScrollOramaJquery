@@ -1,0 +1,15 @@
+body{
+  color: red;
+  text-align: center;
+  height: 10000px;
+}
+
+.scrollblock{
+  text-align: center;
+  width: 100%;
+  height: 600px;
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
